@@ -1,79 +1,123 @@
-.container{
-
-  width: 900px;
-   margin: 0 auto;
+.container {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.başlık{font-size: 25px;}
+.başlık {
+  font-size: 25px;
+}
+
 .başlık ul li {
-  list-style-type: Times New Roman;
+  list-style-type: none;
+  display: inline-block;
   padding: 10px 20px;
   font-size: 15px;
   text-transform: uppercase;
-  display: inline-block;
   text-align: start;
-  
 }
+
 .yanyana {
-  font-size:20px;
+  font-size: 20px;
   display: flex;
-  gap : 30px;
-
+  gap: 30px;
 }
-.yanyana img{
 
+.yanyana img {
   padding-bottom: 50px;
 }
-.yazı{
+
+.yazı {
   gap: 50px;
   text-align: center;
 }
-.yazı p{
+
+.yazı p {
   width: 300px;
 }
-.yazı button{
-width: 200px;
-padding: 15px 0;
-border-radius: 35px;
-margin: 20px;
-text-align: center;
-color: black;
 
+.yazı button {
+  width: 200px;
+  padding: 15px 0;
+  border-radius: 35px;
+  margin: 20px;
+  text-align: center;
+  color: black;
 }
-.ilksıra{
-  
-  
-  display: flex;
-align-items: center;
-padding-bottom: 50px;
 
-gap: 50px;
-}
-.ilksıra img {
-width: 350px;
-height: 350px;
-
-}
-.ikincisıra{
+.ilksıra {
   display: flex;
   align-items: center;
   padding-bottom: 50px;
   gap: 50px;
 }
 
-.ikincisıra img{
+.ilksıra img {
   width: 350px;
-height: 350px;
- 
-}   
-.bitiş{
-text-align: center;
+  height: 350px;
 }
-.bitiş button{
-width: 200px;
-padding: 15px 0;
-border-radius: 35px;
-margin: 20px;
-text-align: center;
-color: black;
+
+.ikincisıra {
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+  gap: 50px;
+}
+
+.ikincisıra img {
+  width: 350px;
+  height: 350px;
+}
+
+.bitiş {
+  text-align: center;
+}
+
+.bitiş button {
+  width: 200px;
+  padding: 15px 0;
+  border-radius: 35px;
+  margin: 20px;
+  text-align: center;
+  color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    max-width: 800px;
+  }
+
+  .yanyana {
+    flex-direction: column;
+  }
+
+  .yanyana img {
+    padding-bottom: 20px;
+  }
+
+  .yazı p {
+    width: 100%;
+  }
+
+  .ilksıra img,
+  .ikincisıra img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
+
+  .başlık ul li {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .yazı button,
+  .bitiş button {
+    width: 100%;
+  }
 }
