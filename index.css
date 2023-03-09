@@ -1,0 +1,79 @@
+.container{
+
+  width: 900px;
+   margin: 0 auto;
+}
+
+.başlık{font-size: 25px;}
+.başlık ul li {
+  list-style-type: Times New Roman;
+  padding: 10px 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: start;
+  
+}
+.yanyana {
+  font-size:20px;
+  display: flex;
+  gap : 30px;
+
+}
+.yanyana img{
+
+  padding-bottom: 50px;
+}
+.yazı{
+  gap: 50px;
+  text-align: center;
+}
+.yazı p{
+  width: 300px;
+}
+.yazı button{
+width: 200px;
+padding: 15px 0;
+border-radius: 35px;
+margin: 20px;
+text-align: center;
+color: black;
+
+}
+.ilksıra{
+  
+  
+  display: flex;
+align-items: center;
+padding-bottom: 50px;
+
+gap: 50px;
+}
+.ilksıra img {
+width: 350px;
+height: 350px;
+
+}
+.ikincisıra{
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+  gap: 50px;
+}
+
+.ikincisıra img{
+  width: 350px;
+height: 350px;
+ 
+}   
+.bitiş{
+text-align: center;
+}
+.bitiş button{
+width: 200px;
+padding: 15px 0;
+border-radius: 35px;
+margin: 20px;
+text-align: center;
+color: black;
+}
